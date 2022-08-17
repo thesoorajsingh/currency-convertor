@@ -1,0 +1,55 @@
+html {
+	display: flex;
+	justify-content: center;
+}
+
+.w-full {
+	height: 50vh;
+}
+
+.box {
+	background-color: #0d0d0d;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.path {
+	stroke-dasharray: 30;
+	stroke-dashoffset: 0;
+	animation: dash 4s cubic-bezier(0.62, 0.01, 0.67, 1) alternate infinite;
+}
+
+.fade {
+	animation: fadeout 0.2s ease-in-out forwards;
+}
+
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 0;
+		fill-opacity: 0;
+		stroke-opacity: 1;
+		fill-opacity: 0;
+	}
+	30% {
+		fill-opacity: 0;
+		stroke-opacity: 1;
+		fill-opacity: 0;
+	}
+	100% {
+		stroke-dashoffset: 400;
+		stroke-opacity: 0;
+		fill-opacity: 1;
+	}
+}
+
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
