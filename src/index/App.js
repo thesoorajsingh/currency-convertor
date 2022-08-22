@@ -1,7 +1,7 @@
-import "./App.css";
+import "./App/App.css";
 import React, { useState, useEffect } from "react";
-import Splash from "./components/Splash/Splash.js";
-import Convertor from "./components/Convertor/Convertor";
+import Splash from "./App/Splash";
+import Convertor from "./App/Convertor";
 import { motion, AnimatePresence } from "framer-motion";
 
 function App() {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Splash.css";
+import "./Splash/Splash.css";
 import { motion } from "framer-motion";
 
 function Splash() {

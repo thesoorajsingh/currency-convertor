@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+![file structure: destiny](https://img.shields.io/badge/file%20structure-destiny-7a49ff?style=flat)
+
+# Getting Started with Beyond Currency Convertor
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

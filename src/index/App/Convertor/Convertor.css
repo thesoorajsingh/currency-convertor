@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.header {
+	color: #069A8E;
+	font-family: Montserrat, sans-serif;
+	font-size: 5rem;
+	text-align: center;
+	margin: 1rem;
+}
+
+.inputContainer {
+	width: 100vw;
+	height: 70vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	outline: none;
+}
+
+.dropdownGroup {
+	width: 25vw;
+	margin: 0 10.5rem;
+}
+
+.input, #dropdown-basic {
+	border-radius: 0;
+	outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.leftToggle {
+	background-color: #069A8E;
+	border-radius: 0;
+	height: 5rem;
+}
+
+.leftToggle:hover {
+	background-color: #067A7E;
+}
+
+.leftToggle:active, .leftToggle:focus {
+	background-color: #3e979a;
+	outline: none;
+}
+
+.rightToggle {
+	background: #aeb368;
+	height: 5rem;
+	border-radius: 0;
+}
+
+.rightToggle:hover {
+	background: #b9bc89;
+}
+
+.rightToggle:active, .rightToggle:focus {
+	background: #b9bc89;
+	outline: none;
+}
+
+.dropdown-menu-dark {
+	max-height: 25vh;
+	overflow: scroll;
+}
+
+.leftInput:disabled {
+	outline: none;
+	background-color: rgb(201, 201, 201);
+}
