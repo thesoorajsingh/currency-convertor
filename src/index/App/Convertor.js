@@ -19,6 +19,8 @@ function Convertor() {
 	const [current, setCurrent] = useState(1);
 	const [calculated, setCalculated] = useState(1);
 
+	console.log(apiData);
+
 	const getRates = () => {
 		const options = {
 			method: "GET",
@@ -75,7 +77,7 @@ function Convertor() {
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ duration: 1200, delay: 1 }}
+				transition={{ duration: 1.2, delay: 1 }}
 				className="inputContainer"
 			>
 				<InputGroup className="dropdownGroup">
@@ -99,9 +101,13 @@ function Convertor() {
 					</UncontrolledDropdown>
 				</InputGroup>
 
-				<div>
+				<motion.div
+					initial={{ rotate: 0 }}
+					animate={{ rotate: 180 }}
+					transition={{ delay: 2, duration: 1 }}
+				>
 					<img src={doubleArrow} alt="double arrow" />
-				</div>
+				</motion.div>
 
 				<InputGroup className="dropdownGroup">
 					<Input
